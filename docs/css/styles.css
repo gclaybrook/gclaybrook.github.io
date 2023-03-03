@@ -1,7 +1,3 @@
-/* This stylesheet is where to add styles for your Shakespeare Home Page */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 
 * {
@@ -10,125 +6,375 @@
   box-sizing: border-box;
 }
 
-body {
-  /* font-family: Verdana, Courier, monospace, Tahoma, sans-serif; */
-  /*your style rules go in here */
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: rgb(220, 41, 41);
-/* background-image: url('../images/macduffbattle.jpg); */
+html {
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 340px;
 }
 
-header {
-/* border: 1px solid rgb(3, 3, 3); */
-background-color: lightgray;
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(229, 229, 229);
+  padding-top: 200px;
+  font-size: 1rem;
+  scroll-padding-top: 340px;
+}
+.takemeup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  background-color: rgb(109, 21, 17);
+  border: none;
+  width: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.takemeup a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1rem 2 rem;
+}
+
+nav{
+  background-color: rgb(146, 52, 52);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: .6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: block;
+  color: black;
+}
+
+li ul{
+  display: none;
+}
+
+nav ul li:hover {
+  background-color: rgb(120, 123, 123);
+}
+nav ul li a:hover {
+  color: white;
+}
+li ul li a {
+  margin: 0.3rem 0;
+  color: rgb(104, 105, 104);
+  font-size: 0.6rem;
+}
+
+li ul {
+  display:none;
+}
+
+nav ul li:hover ul {
+display:flex;
+flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+  scroll-padding-top: 25px;
+}
+
+  body {
+    padding-top: 25px;
+    width: auto;
+    text-size-adjust: auto;
+    padding-left: 10em;
+  }
+}
+@media screen (max-width: 500px) {
+  h1.dramatishead {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 100%;
+    text-size-adjust: auto;
+  }
+}
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li ul {
+    position: static;
+  }
+
+li.home {
+  text-align: left;
+  padding-left: 3rem;
+  margin-right: 3rem;
+  flex: 4 1 100px;
+  align-self: flex-start;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+}
+
+nav ul {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: small;
+}
+
+nav ul li {
+  flex: 0 1 6.5rem;
+}
+
+nav ul li ul li {
+  flex: 0 0 2rem;
+}
+
+li ul li a {
+  padding: 0.3rem 0;
+  /* ont-size: .8rem; */
+}
+
+li ul {
+  display: none;
+  text-align:center;
+  position: absolute;
+  background-color: rgb(206, 206, 206);
+  width: 6.5rem;
+}
+
+li ul li {
+  width: 6.5rem;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li.home:hover {
+  background: none;
+}
+
+nav ul li.home:hover a {
+  color: rgb(170, 57, 21);
+  text-decoration: underline;
+}
+
+section {
+  border: 0;
+}
+
+nav.content {
+  text-align: justify;
+}
+
+section.dramatis {
+  border: 1px solid black;
+  width: 65%;
+  margin: 3em auto;
+  background-color: #fff;
+  padding-bottom: 1rem;
+  text-size-adjust: auto;
+}
+
+section.play {
+  font-family: sans-serif;
+  border: 1px solid black;
+  width: 65%;
+  margin: 3em auto;
+  background-color: #fff;
+}
+
+
+img {
+  max-width: 600px;
+  float: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+image {
+  max-width: 600px;
+  float: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+  border: 1px black;
+}
+.titleimage {
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
+
+iframe {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.act {
+  font-size: xx-large;
+  text-align: center;
+  text-size-adjust: auto;
+  margin: auto;
+  padding-top: 1rem;
+  border-top: 1px solid black;
+  background-color: silver;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
 h1{
   text-align: center;
+  text-size-adjust: auto;
+  font-size: xx-large;
+  color: rgb(6, 6, 6);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1 rem;
+  background-color: #fff;
+  height: 4rem;
+  text-size-adjust: auto;
 }
 
-main {
-width: 80%;
-max-width: 900px;
-margin:12px;
-margin-left: auto;
-margin-right: auto;
-background-color: white;
-padding: 3em;
-position: relative;
-}
-
-
-section {
-
-}
-
-ul{
-margin: .5em 1em;
-list-style-position: inside;
-}
-
-li{
-  margin-bottom: auto;
-}
-
-figure {
- width: 60%;
- margin: 0 auto;
- float: right;
- margin-left: 1em;
-}
-
-img{
-  display: block;
+h1.dramatishead {
   width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  background-color: silver;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid black;
+  text-size-adjust: auto;
+}
+
+h2.location {
+  position: relative;
+  font-size: 1rem;
+  color: black;
+  margin: 2rem 0;
+  padding: 1.2rem;
+ 
+}
+.dramatis{
+  text-align: center;
+}
+p.play_location {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  height: 5em;
+  padding: 5%;
+}
+
+.firstscene {
+  background-color: rgb(146, 52, 52);
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  color: white;
+}
+
+.scene {
+  background-color: rgb(146, 52, 52);
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  color: white;
+}
+
+.verseline {
+  margin: 0 0 0.4em 8em;
+  margin-top: .5rem;
+  margin-left: 5rem;
+ text-size-adjust: auto;
+}
+
+.prose {
+  margin: 0 0 0.4em 8em;
+  margin-top: .5rem;
+  margin-left: 3.5rem;
+  text-size-adjust: auto;
+  line-height: 1.6rem;
+}
+.charactername {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: auto;
 }
 
-p{
-  margin-bottom: 1em;
-  color: rgb(0, 0, 0);
-  text-align: justify;
-  line-height: 1.4em;
+.character {
+  color: rgb(144, 5, 5);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  text-size-adjust: auto;
+  margin-top: .5rem;
+  margin-left: 2rem;
+}
+.character_role {
+  text-align: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:rgb(109, 21, 17);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.playlink {
-clear: both;
+.stagedirection{
+  text-align: left;
+  font-size: 1rem;
+  text-size-adjust: auto;
+  margin: 2rem;
+  font-style: italic;
 }
-
-.playlink a {
-  color:blue;
-  text-decoration: none;
-  background-color: rgb(144, 164, 244);
-  padding: .5em;
+p.caption {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-size: small;
+  text-align: right;
+  padding-right: 20%;
+  margin-top: 1rem;
 }
-
-footer {
-/* border: 1px solid purple; */
-  text-align: center;
-  position:fixed;
-  bottom: 0; 
-  width: 100%;
-  color:white;
-  background-color: lightgray;
-  height: 2em;
-}
-
-
-
-
-
-@media (max-width: 600px) {
-
-  figure {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    margin-left: 0 auto;
-   }
-
-main {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 1em;
-}
-body {
-  background-color: white;
-}
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-

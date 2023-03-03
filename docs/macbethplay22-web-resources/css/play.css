@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 li ul{
-  /* display: none; */
+  display: none;
 }
 
 nav ul li:hover {
@@ -90,13 +90,6 @@ li ul li a {
   font-size: 0.6rem;
 }
 
-li.home {
-  flex: 1 0 auto;
-  text-align: center;
-  padding-left: 30px;
-  margin-right: 0;
-}
-
 li ul {
   display:none;
 }
@@ -106,17 +99,37 @@ display:flex;
 flex-direction: column;
 }
 
-@media screen and (min-width: 580px) {
-  
+@media screen and (min-width: 800px) {
   html {
   scroll-padding-top: 25px;
 }
 
   body {
-    font-size: 1rem;
-
+    padding-top: 25px;
+    width: auto;
+    text-size-adjust: auto;
+    padding-left: 10em;
   }
 }
+@media screen (max-width: 500px) {
+  h1.dramatishead {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 100%;
+    text-size-adjust: auto;
+  }
+}
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li ul {
+    position: static;
+  }
+
 li.home {
   text-align: left;
   padding-left: 3rem;
@@ -181,19 +194,14 @@ section {
 nav.content {
   text-align: justify;
 }
-/*Here follows the class names that you will have in your html*/
-/*You may have more if you added styles in InDesign*/
-/*You need to add the style attributes between the curly brackets*/
-
-/* the following may not be used but it doesn't matter if they are listed here  */
-
-/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 section.dramatis {
   border: 1px solid black;
   width: 65%;
   margin: 3em auto;
   background-color: #fff;
+  padding-bottom: 1rem;
+  text-size-adjust: auto;
 }
 
 section.play {
@@ -248,7 +256,7 @@ iframe {
   text-align: center;
   text-size-adjust: auto;
   margin: auto;
-  padding: 2rem;
+  padding-top: 1rem;
   border-top: 1px solid black;
   background-color: silver;
   border-bottom: 1px solid black;
@@ -261,20 +269,24 @@ h1{
   font-size: xx-large;
   color: rgb(6, 6, 6);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 2rem;
   margin-bottom: 1 rem;
   background-color: #fff;
   height: 4rem;
+  text-size-adjust: auto;
 }
 
 h1.dramatishead {
-  font-size: 2rem;
-  text-size-adjust: auto;
+  width: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
+  margin-top: 0;
+  margin-bottom: 2rem;
   background-color: silver;
   padding-bottom: 1rem;
   padding-top: 1rem;
   border-bottom: 1px solid black;
+  text-size-adjust: auto;
 }
 
 h2.location {
@@ -287,8 +299,6 @@ h2.location {
 }
 .dramatis{
   text-align: center;
-
-  /* margin-top: 1rem; */
 }
 p.play_location {
   font-size: 2rem;
@@ -306,7 +316,6 @@ p.play_location {
   margin-right: 5%;
   margin-top: 5%;
   color: white;
-
 }
 
 .scene {
@@ -317,20 +326,20 @@ p.play_location {
   margin-top: 5%;
   color: white;
 }
-.song {
-
-}
 
 .verseline {
   margin: 0 0 0.4em 8em;
-  margin-left: 2rem;
+  margin-top: .5rem;
+  margin-left: 5rem;
  text-size-adjust: auto;
 }
 
 .prose {
   margin: 0 0 0.4em 8em;
-  margin-left: 2rem;
+  margin-top: .5rem;
+  margin-left: 3.5rem;
   text-size-adjust: auto;
+  line-height: 1.6rem;
 }
 .charactername {
   text-align: center;
@@ -342,7 +351,9 @@ p.play_location {
   color: rgb(144, 5, 5);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: large;
-  margin-left: 1rem;
+  text-size-adjust: auto;
+  margin-top: .5rem;
+  margin-left: 2rem;
 }
 .character_role {
   text-align: right;
@@ -353,21 +364,11 @@ p.play_location {
 }
 
 .stagedirection{
-  text-align: justify;
+  text-align: left;
   font-size: 1rem;
   text-size-adjust: auto;
   margin: 2rem;
   font-style: italic;
-}
-
-.character_beforespeech {
-  display: block;
-  position: relative;
-  left: -8em;
-  top: 1em;
-  /* font-size: 1.1em; */
-  width: 4em;
-  margin: 2rem;
 }
 p.caption {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

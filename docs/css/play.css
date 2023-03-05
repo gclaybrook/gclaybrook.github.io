@@ -16,13 +16,20 @@ html {
   scroll-padding-top: 340px;
 }
 
+
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(229, 229, 229);
   padding-top: 200px;
   font-size: 1rem;
   scroll-padding-top: 340px;
+  font-size-adjust: auto;
 }
+.video {
+  align-items: center;
+  margin: auto;
+}
+
 .takemeup {
   position: fixed;
   bottom: 0;
@@ -46,9 +53,9 @@ main {
   max-width: 900px;
   margin: 0 auto;
   background-color: white;
-  padding: 1rem 2 rem;
+  padding: 1rem 2rem;
+  align-items: center;
 }
-
 nav{
   background-color: rgb(146, 52, 52);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -58,6 +65,7 @@ nav{
   left: 0;
   width: 100%;
   z-index: 100%;
+  padding: 0%;
 }
 
 nav ul {
@@ -71,18 +79,14 @@ nav ul li a {
   text-decoration: none;
   margin: 0.5rem 0;
   display: block;
-  color: black;
-}
-
-li ul{
-  display: none;
+  color: rgb(252, 250, 250);
 }
 
 nav ul li:hover {
   background-color: rgb(120, 123, 123);
 }
 nav ul li a:hover {
-  color: white;
+  color: rgb(252, 252, 252);
 }
 li ul li a {
   margin: 0.3rem 0;
@@ -103,7 +107,9 @@ flex-direction: column;
   html {
   scroll-padding-top: 25px;
 }
-
+  .h1 {
+    text-size-adjust: auto;
+  }
   body {
     padding-top: 25px;
     width: auto;
@@ -113,13 +119,17 @@ flex-direction: column;
 }
 @media screen (max-width: 500px) {
   h1.dramatishead {
-    border: 1px solid red;
+    border: 1px;
     width: 100%;
     max-width: 100%;
     text-size-adjust: auto;
+    text-wrap:after;
+  }
+  body {
+    font-size: small;
+    margin-left: .25rem;
   }
 }
-  
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -132,8 +142,9 @@ flex-direction: column;
 
 li.home {
   text-align: left;
-  padding-left: 3rem;
+  padding-left: 2rem;
   margin-right: 3rem;
+  margin-top: .5rem;
   flex: 4 1 100px;
   align-self: flex-start;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -194,7 +205,10 @@ section {
 nav.content {
   text-align: justify;
 }
-
+div {
+  margin: auto;
+  width: 50%;
+}
 section.dramatis {
   border: 1px solid black;
   width: 65%;
@@ -207,9 +221,12 @@ section.dramatis {
 section.play {
   font-family: sans-serif;
   border: 1px solid black;
-  width: 65%;
-  margin: 3em auto;
+  width: 70%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
+  align-items: center;
 }
 
 
@@ -244,10 +261,11 @@ image {
 }
 
 iframe {
-  display: block;
+  display: flex;
+  flex-direction: column;
   float: none;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  margin: auto;
   margin-top: 1rem;
 }
 
@@ -264,20 +282,20 @@ iframe {
 }
 
 h1{
+  width: 100%;
   text-align: center;
   text-size-adjust: auto;
   font-size: xx-large;
   color: rgb(6, 6, 6);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 1 rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   background-color: #fff;
-  height: 4rem;
-  text-size-adjust: auto;
 }
 
 h1.dramatishead {
   width: 100%;
+  word-wrap: break-word;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   margin-top: 0;

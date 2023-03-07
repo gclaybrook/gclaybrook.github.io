@@ -4,20 +4,22 @@
 		<meta charset="utf-8" />
 		<title>macbeth</title>
 		<link href="macbethplay22-web-resources/css/play.css" rel="stylesheet" type="text/css" />
+		<script>
+		function hidemenu() {
+			document.getElementById("toggle").checked = false;
+		  }
+		</script>
 	</head>
-	
 
-	<div>
-		<header><h1> Macbeth</h1></header>
-		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/hnc0pOjr1qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</div>
 	<body id="macbethplay22" lang="en-GB">
-		<p class="takemeup"><a href="#macbethplay22">^</p>
-		<section id="_idContainer000" class="play">
+		<p class="takemeup"><a href="#macbethplay22">^</a></p>
+		<section id="_idContainer000" class="contents">
 			<nav>
-				<input type="checkbox" id="toggle">
-					<label for="toggle" class="hamburger">&#9776;</label>
-				<ul>
+				
+				<label for="toggle" class="hamburger">&#9776;</label>
+				<input type="checkbox" id="toggle" />
+				<!--     add a javascript function to hide the menu after being clicked -->
+				<ul onclick="hidemenu()">
 						<li class="home" lang="en-GB"><a href="docs/index.html">Home </a></li>
 						<li class="TOC-Heading-1" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor000">Dramatis Personae</a></li>
 							<li class="TOC-Heading-1" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor001">Act </a>
@@ -39,7 +41,7 @@
 									<li class="TOC-Heading-2" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor013"><span class="allscenes">Scene IV</span></a></li>
 								</ul>
 							</li>
-							<li class="TOC-Heading-1" lang="en-GB"><a href="macbethplay22.	html#_idTextAnchor014">Act III</a>
+							<li class="TOC-Heading-1" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor014">Act III</a>
 								<ul>
 									<li class="TOC-Heading-2" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor015"><span class="allscenes">Scene I</span></a></li>
 									<li class="TOC-Heading-2" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor016"><span class="allscenes">Scene II</span></a></li>
@@ -69,9 +71,13 @@
 									<li class="TOC-Heading-2" lang="en-GB"><a href="macbethplay22.html#_idTextAnchor034"><span class="allscenes">Scene Ix</span></a></li>
 								</ul>
 							</li>
+				</ul>
 			</nav>
 		</section>
-
+		<div>
+			<header><h1> Macbeth</h1></header>
+			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/hnc0pOjr1qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
 		<section id="_idContainer002" class="dramatis">
 			<h1 class="dramatishead" lang="en-GB"><a id="_idTextAnchor000"></a>Dramatis Personae</h1>
 			<p class="charactername" lang="en-GB">Duncan&#9;&#9;<span class="character_role">King of Scotland</span></p>
@@ -103,9 +109,6 @@
 			<p class="charactername" lang="en-GB">An Old Man&#9;&#9;</p>
 			<p class="charactername" lang="en-GB">The Ghost of Banquo and other Apparitions&#9;&#9;</p>
 			<p class="charactername" lang="en-GB">Lords, Gentlemen, Officers, Soldiers, Murtherers, Attendants, and Messengers&#9;&#9;</p>
-			<div>
-				<div id="_idContainer001" class="Basic-Text-Frame">
-			</div>
 		</section>
 		<section class="titleimage">
 			<img src="macbethplay22-web-resources/image/swordandcrowns.png" alt="" />

@@ -13,7 +13,7 @@ html {
   background: #fff;
   font-size: 16px;
   scroll-behavior: smooth;
-  scroll-padding-top: 340px;
+  scroll-padding-top: 50px;
 }
 
 
@@ -22,12 +22,7 @@ body {
   background-color: rgb(229, 229, 229);
   padding-top: 200px;
   font-size: 1rem;
-  scroll-padding-top: 340px;
-  font-size-adjust: auto;
-}
-.video {
-  align-items: center;
-  margin: auto;
+  /* scroll-padding-top: 340px; */
 }
 
 .takemeup {
@@ -54,148 +49,6 @@ main {
   margin: 0 auto;
   background-color: white;
   padding: 1rem 2rem;
-  align-items: center;
-}
-nav{
-  background-color: rgb(146, 52, 52);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: .6rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100%;
-  padding: 0%;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  margin: 0.5rem 0;
-  display: block;
-  color: rgb(252, 250, 250);
-}
-
-nav ul li:hover {
-  background-color: rgb(120, 123, 123);
-}
-nav ul li a:hover {
-  color: rgb(252, 252, 252);
-}
-li ul li a {
-  margin: 0.3rem 0;
-  color: rgb(104, 105, 104);
-  font-size: 0.6rem;
-}
-
-li ul {
-  display:none;
-}
-
-nav ul li:hover ul {
-display:flex;
-flex-direction: column;
-}
-
-@media screen and (min-width: 800px) {
-  html {
-  scroll-padding-top: 25px;
-}
-  .h1 {
-    text-size-adjust: auto;
-  }
-  body {
-    padding-top: 25px;
-    width: auto;
-    text-size-adjust: auto;
-    padding-left: 10em;
-  }
-}
-@media screen (max-width: 500px) {
-  h1.dramatishead {
-    border: 1px;
-    width: 100%;
-    max-width: 100%;
-    text-size-adjust: auto;
-    text-wrap:after;
-  }
-  body {
-    font-size: small;
-    margin-left: .25rem;
-  }
-}
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  li ul {
-    position: static;
-  }
-
-li.home {
-  text-align: left;
-  padding-left: 2rem;
-  margin-right: 3rem;
-  margin-top: .5rem;
-  flex: 4 1 100px;
-  align-self: flex-start;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: medium;
-}
-
-nav ul {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: small;
-}
-
-nav ul li {
-  flex: 0 1 6.5rem;
-}
-
-nav ul li ul li {
-  flex: 0 0 2rem;
-}
-
-li ul li a {
-  padding: 0.3rem 0;
-  /* ont-size: .8rem; */
-}
-
-li ul {
-  display: none;
-  text-align:center;
-  position: absolute;
-  background-color: rgb(206, 206, 206);
-  width: 6.5rem;
-}
-
-li ul li {
-  width: 6.5rem;
-}
-
-nav ul li:hover ul {
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul li.home:hover {
-  background: none;
-}
-
-nav ul li.home:hover a {
-  color: rgb(170, 57, 21);
-  text-decoration: underline;
 }
 
 section {
@@ -205,15 +58,13 @@ section {
 nav.content {
   text-align: justify;
 }
-div {
-  margin: auto;
-  width: 50%;
-}
+
 section.dramatis {
   border: 1px solid black;
   width: 65%;
   margin: 3em auto;
   background-color: #fff;
+  size: 3rem;
   padding-bottom: 1rem;
   text-size-adjust: auto;
 }
@@ -221,12 +72,9 @@ section.dramatis {
 section.play {
   font-family: sans-serif;
   border: 1px solid black;
-  width: 70%;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  width: 65%;
+  margin: 3em auto;
   background-color: #fff;
-  align-items: center;
 }
 
 
@@ -261,11 +109,10 @@ image {
 }
 
 iframe {
-  display: flex;
-  flex-direction: column;
+  display: block;
   float: none;
-  align-items: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1rem;
 }
 
@@ -282,20 +129,20 @@ iframe {
 }
 
 h1{
-  width: 100%;
   text-align: center;
   text-size-adjust: auto;
   font-size: xx-large;
   color: rgb(6, 6, 6);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1 rem;
   background-color: #fff;
+  height: 4rem;
+  text-size-adjust: auto;
 }
 
 h1.dramatishead {
   width: 100%;
-  word-wrap: break-word;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   margin-top: 0;
@@ -395,4 +242,154 @@ p.caption {
   text-align: right;
   padding-right: 20%;
   margin-top: 1rem;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex: 0 0 10rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+/* we turn off the underline and set the padding and the color O */
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  color: rgb(252, 250, 250);
+}
+
+
+
+nav ul li:hover {
+  background-color: black;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+li ul li a {
+  padding: 0.3rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 10rem;
+}
+
+
+
+li.home {
+  text-align: left;
+  padding-left: 3rem;
+  margin-right: 3rem;
+  flex: 4 1 100px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  li ul {
+    position: static;
+  }
+
+  nav ul li {
+    flex: 0 0 auto; 
+    width: 100%;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+li.home {
+  flex: 1 0 auto;
+  text-align: center;
+  padding-left: 50px;
+}
+
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  margin-right: 0.8em;
+}
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  /*   but we also need to hide the menu until that hamburger is clicked */
+
+  nav ul {
+    display: none;
+  }
+
+  /*when the hamburger is clicked the ul below it will be made to show */
+  /*  the tilda ~ points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+}
+
+
+/* we need to reduce the padding and margings when the screen is small */
+
+@media screen and (max-width: 900px) {
+
+
+  section.dramatis, section.play {
+    border: none;
+    width: 100%;
+    margin: 3em 0;
+    background-color: #fff;
+    padding-bottom: 1rem;
+    text-size-adjust: auto;
+  }
+
+
 }

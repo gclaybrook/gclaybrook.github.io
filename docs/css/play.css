@@ -16,13 +16,15 @@ html {
   scroll-padding-top: 50px;
 }
 
+
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(229, 229, 229);
   padding-top: 200px;
   font-size: 1rem;
-  /* scroll-padding-top: 40px; */
+  /* scroll-padding-top: 340px; */
 }
+
 .takemeup {
   position: fixed;
   bottom: 0;
@@ -46,7 +48,7 @@ main {
   max-width: 900px;
   margin: 0 auto;
   background-color: white;
-  padding: 1rem 2 rem;
+  padding: 1rem 2rem;
 }
 
 section {
@@ -62,6 +64,7 @@ section.dramatis {
   width: 65%;
   margin: 3em auto;
   background-color: #fff;
+  size: 3rem;
   padding-bottom: 1rem;
   text-size-adjust: auto;
 }
@@ -240,7 +243,6 @@ p.caption {
   padding-right: 20%;
   margin-top: 1rem;
 }
-
 nav {
   width: 100%;
   position: fixed;
@@ -260,16 +262,19 @@ nav ul {
 }
 
 nav ul li {
-  flex: 0 0 10rem;
+  flex: 0 0 10rem; /*the same as flex-grow, flex-shrink, flex-basis */
   text-align: center;
 }
+
+/* we turn off the underline and set the padding and the color O */
 
 nav ul li a {
   text-decoration: none;
   padding: 0.8rem 1rem;
   display: block;
-  color: green;
+  color: rgb(252, 250, 250);
 }
+
 
 
 nav ul li:hover {
@@ -280,6 +285,7 @@ nav ul li a:hover {
   color: white;
 }
 
+
 li ul {
   display: none;
   position: absolute;
@@ -288,7 +294,7 @@ li ul {
 
 li ul li a {
   padding: 0.3rem 1.5rem;
-  /*   font-size: 0.8rem; */
+    font-size: 0.8rem;
 }
 
 nav ul li:hover ul {
@@ -298,8 +304,9 @@ nav ul li:hover ul {
 
 nav ul li ul li {
   flex: 0 1 auto;
-  width: 10rem; 
+  width: 10rem;
 }
+
 
 
 li.home {
@@ -320,7 +327,7 @@ li.home {
   }
 
   nav ul li {
-    flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 auto; 
     width: 100%;
   }
 
@@ -330,7 +337,6 @@ li.home {
     width: 100%;
   }
 
-  /* for the home button */
 
 li.home {
   flex: 1 0 auto;
@@ -338,9 +344,7 @@ li.home {
   padding-left: 50px;
 }
 
-
 }
-
 input[type="checkbox"] {
   display: none;
 }
@@ -351,4 +355,41 @@ input[type="checkbox"] {
   color: white;
   margin-right: 0.8em;
 }
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
 
+  /*   but we also need to hide the menu until that hamburger is clicked */
+
+  nav ul {
+    display: none;
+  }
+
+  /*when the hamburger is clicked the ul below it will be made to show */
+  /*  the tilda ~ points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+}
+
+
+/* we need to reduce the padding and margings when the screen is small */
+
+@media screen and (max-width: 900px) {
+
+
+  section.dramatis, section.play {
+    border: none;
+    width: 100%;
+    margin: 3em 0;
+    background-color: #fff;
+    padding-bottom: 1rem;
+    text-size-adjust: auto;
+  }
+
+
+}

@@ -362,22 +362,17 @@ input[type="checkbox"] {
     cursor: pointer;
   }
 
-  /*   but we also need to hide the menu until that hamburger is clicked */
 
   nav ul {
     display: none;
   }
 
-  /*when the hamburger is clicked the ul below it will be made to show */
-  /*  the tilda ~ points to the next sibling selector */
 
   input[type="checkbox"]:checked ~ ul {
     display: block;
   }
 }
 
-
-/* we need to reduce the padding and margings when the screen is small */
 
 @media screen and (max-width: 900px) {
 

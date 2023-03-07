@@ -352,31 +352,3 @@ input[type="checkbox"] {
   margin-right: 0.8em;
 }
 
-@media screen and (max-width: 900px) {
-  .hamburger {
-    display: block;
-    float: right;
-    cursor: pointer;
-  }
-
-  nav ul {
-    display: none;
-  }
-  input[type="checkbox"]:checked ~ ul {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-
-  section.dramatis, section.play {
-    border: none;
-    width: 100%;
-    margin: 3em 0;
-    background-color: #fff;
-    padding-bottom: 1rem;
-    text-size-adjust: auto;
-  }
-
-}
